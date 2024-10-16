@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - VetCare</title>
+    <link rel="icon" href="./img/salud.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Servicios de VetCare</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="comments.html">Comentarios</a></li>
+            <li><a href="services.html">Servicios</a></li>
+            <li><a href="notifications.html">Notificaciones</a></li>
+            <li><a href="workers.html">Trabajadores</a></li>
+            <button id="logoutButton">Cerrar Sesión</button>
+        </ul>
+    </nav>
+
+    <div id="servicesContainer">
+        <h2>Servicios Disponibles</h2>
+        <div id="servicesList"></div>
+    </div>
+
+    <script src="app.js"></script>
+    <script>
+        // Obtener y mostrar los servicios
+        document.addEventListener('DOMContentLoaded', getServices);
+    </script>
+</body>
+</html>
